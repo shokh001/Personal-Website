@@ -4,11 +4,13 @@
   
   @media (max-width: 992px) {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 
   @media (max-width: 767px) {
     padding-top: 60px;
+  }
+  @media (max-width: 576px) {
     padding-bottom: 0;
   }
 
@@ -59,6 +61,7 @@
 
     .wrapper-section {
       display: flex;
+      position: relative;
 
       @media (max-width: 576px) {
         display: block;
@@ -120,7 +123,15 @@
       }
 
       .right-section {
-        width: 82%;
+        width: 80%;
+        margin-left: 30px;
+        
+        @media (min-width: 576px) {
+          position: absolute;
+          left: 20%;
+          top: 0;
+          height: 350px;          
+         }
          
         .card {
             padding: 10px 10px 20px 10px;
