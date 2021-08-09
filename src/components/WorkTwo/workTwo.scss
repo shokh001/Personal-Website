@@ -1,0 +1,14 @@
+.workTwo {
+    @media (max-width: 992px) {
+        padding-top: 50px;
+      }
+    .container {
+
+        .wrapper-project{             
+            @media (max-width: 767px) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../../assets/images/currencyConventer.png');
+                border-radius: var(--border-radius);
+              }
+            }
+    }
+}
