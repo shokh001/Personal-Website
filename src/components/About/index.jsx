@@ -22,6 +22,7 @@ const About = () => {
                             <div className="technology">Css</div>
                             <div className="technology">Bootstrap</div>
                             <div className="technology">Sass</div>
+                            <div className="technology">Material UI</div>
                         </div>
                         <div className='list'>
                             <div className="technology">JavaScript</div>

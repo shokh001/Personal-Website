@@ -34,7 +34,7 @@ const Portfolio = () => {
                                         <i className="far fa-folder"></i>
                                         <div className="github">
                                             <a target='_blank' rel="noreferrer" href={link}><i className="fab fa-github"></i></a>
-                                            <a href="/" className='external_link'><i className="fas fa-external-link-alt"></i></a>
+                                            <a href="/#" className='external_link'><i className="fas fa-external-link-alt"></i></a>
                                         </div>
                                     </div>
 

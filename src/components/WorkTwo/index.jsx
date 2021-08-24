@@ -28,7 +28,7 @@ const WorkTwo = () => {
 
                             <div className="project-link">
                                 <a href="https://github.com/shokh001/Currency-Converter"><i className="fab fa-github"></i></a>
-                                <a href="/"><i className="fas fa-external-link-alt"></i></a>
+                                <a href="/#"><i className="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>

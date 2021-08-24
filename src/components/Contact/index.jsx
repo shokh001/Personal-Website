@@ -20,7 +20,7 @@ const Contact = () => {
                     <a target='_blank' rel="noreferrer" href="https://www.instagram.com/shokhjakhon_001/"><i className="fab fa-instagram"></i></a>
                     <a target='_blank' rel="noreferrer" href="https://www.facebook.com/shohjahon.dilmurodov/"><i className="fab fa-facebook-f"></i></a>
                 </div>
-                <a href="/" className='myGithub'>Designed & Built by Shohjahon Dilmurodov</a>
+                <a href="/#" className='myGithub'>Designed & Built by Shohjahon Dilmurodov</a>
             </div>
         </div>
     )
