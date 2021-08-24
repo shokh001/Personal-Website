@@ -20,7 +20,9 @@ const Portfolio = () => {
         <div className="portfolio experience">
             <div className="container">
                 <h1>Other Projects</h1>
+                <div className="archive-wrap">
                 <a target='_blank' rel="noreferrer" href='https://github.com/shokh001?tab=repositories' className='archive'>view the archive</a>
+                </div>
 
                 <div className="card-wrapper">
                     {
@@ -53,12 +55,12 @@ const Portfolio = () => {
                     }
                 </div>
 
-                <div className="btn" style={{ display: btnShow && 'none' }} onClick={btnMore}>
+                <button type='button' className="btn" style={{ display: btnShow && 'none' }} onClick={btnMore}>
                     Show more
-                </div>
-                <div className="btn" style={{ display: !btnShow && 'none' }} onClick={btnLess}>
+                </button>
+                <button type='button' className="btn" style={{ display: !btnShow && 'none' }} onClick={btnLess}>
                     Show less
-                </div>
+                </button>
             </div>
         </div>
     );

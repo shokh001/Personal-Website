@@ -29,32 +29,32 @@
         color: var(--lightest-slate);
     }
 
-    .archive {
-      display: block;
-      width: fit-content;
+    .archive-wrap {
       text-align: center;
-      margin: 0 auto;
-      text-decoration: none;
-      color: var(--green);
-      font-size: 15px;
-      letter-spacing: 1.2px;
-      position: relative;
 
-      &::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 1px;
-        background-color: var(--green);
-        position: absolute;
-        left: 0;bottom: -2px;
-        transition: all 0.2s linear;
+      .archive {
+        text-decoration: none;
+        color: var(--green);
+        font-size: 15px;
+        letter-spacing: 1.2px;
+        position: relative;
+  
+        &::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 1px;
+          background-color: var(--green);
+          position: absolute;
+          left: 0;bottom: -2px;
+          transition: all 0.2s linear;
+        }
+  
+        &:hover::after {
+          width: 100%;
+        }
       }
-
-      &:hover::after {
-        width: 100%;
-      }
-    }
+    }    
 
     .card-wrapper {
       display: flex;
@@ -79,6 +79,7 @@
         }
         @media (max-width: 650px) {
           width: 100%;
+          margin-top: 25px;
         }
 
         &:hover {
@@ -169,12 +170,13 @@
     }
 
     .btn {
-        width: fit-content;
+        background-color: transparent;
         font-size: 15px;
         padding: 20px 28px;
         border: 1px solid var(--green);
         border-radius: 3px;
         color: var(--green);
+        display: block;
         margin: 50px auto 0;
         cursor: pointer;
         &:hover {
