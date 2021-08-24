@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Resume from './Resume.pdf'
 import './navbar.scss'
 
 const Navbar = () => {
@@ -66,7 +67,7 @@ const Navbar = () => {
                         <li><a href="#contact" onClick={()=> linkGo(4)} style={{ border: active === 4 && '2px dashed #64ffda' }}> <span>04.</span> Contact</a></li>
                     </ul>
 
-                    <a className='btn' href="/#">Resume</a>
+                    <a className='btn' href={Resume}>Resume</a>
                 </div>
 
                 <div className="burger" onClick={disableScrolling}>
