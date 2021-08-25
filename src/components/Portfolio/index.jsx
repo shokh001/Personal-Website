@@ -26,7 +26,7 @@ const Portfolio = () => {
 
                 <div className="card-wrapper">
                     {
-                        PortfolioData.map(({ id, title, link, descr, technology_1, technology_2, technology_3 }) => {
+                        PortfolioData.map(({ id, title, external_link, link, descr, technology_1, technology_2, technology_3 }) => {
                             return (
                                 <div
                                     className={dnone >= id ? 'card' : 'card dnone'}
@@ -36,7 +36,9 @@ const Portfolio = () => {
                                         <i className="far fa-folder"></i>
                                         <div className="github">
                                             <a target='_blank' rel="noreferrer" href={link}><i className="fab fa-github"></i></a>
-                                            <a href="/#" className='external_link'><i className="fas fa-external-link-alt"></i></a>
+                                            {
+                                                external_link && <a href={external_link} rel="noreferrer" target='_blank' className='external_link'><i className="fas fa-external-link-alt"></i></a>
+                                            }
                                         </div>
                                     </div>
 

@@ -67,7 +67,7 @@ const Navbar = () => {
                         <li><a href="#contact" onClick={()=> linkGo(4)} style={{ border: active === 4 && '2px dashed #64ffda' }}> <span>04.</span> Contact</a></li>
                     </ul>
 
-                    <a className='btn' href={Resume}>Resume</a>
+                    <a className='btn' target='_blank' rel="noreferrer" href={Resume}>Resume</a>
                 </div>
 
                 <div className="burger" onClick={disableScrolling}>

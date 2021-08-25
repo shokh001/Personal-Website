@@ -1,12 +1,16 @@
 .workTwo {
     @media (max-width: 992px) {
-        padding-top: 50px;
+        padding-top: 10px;
+      }
+    @media (max-width: 576px) {
+        padding-top: 0;
       }
     .container {
 
-        .wrapper-project{             
+        .wrapper-project{        
+          margin-top: 50px;     
             @media (max-width: 767px) {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../../assets/images/currencyConventer.png');
+                background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../../assets/images/currencyConventer.png');
                 border-radius: var(--border-radius);
               }
             }

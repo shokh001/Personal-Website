@@ -61,7 +61,11 @@
       justify-content: space-between;
       flex-wrap: wrap;
       width: 100%;
-      margin-top: 30px;      
+      margin-top: 30px; 
+      @media (max-width: 576px) {
+        margin-top: 15px;
+      }
+       
 
       .card {
         margin-top: 15px;
@@ -112,7 +116,6 @@
           }
 
           .fa-github {
-            margin-right: 20px;
             font-size: 20px;
             color: var(--lightest-slate);
             z-index: 4;
@@ -128,6 +131,7 @@
             color: var(--lightest-slate);
             z-index: 4;
             position: relative;
+            margin-left: 20px;
 
             &:hover {
               color: var(--green);

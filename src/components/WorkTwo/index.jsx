@@ -9,13 +9,13 @@ const WorkTwo = () => {
             <div className="container">
 
                 <div className="wrapper-project">
-                    <a href='https://github.com/shokh001/Currency-Converter' className="project-img" style={{ right: '0' }}>
+                    <a target='_blank' rel="noreferrer" href='https://shokh-currency-conventer.netlify.app/' className="project-img" style={{ right: '0' }}>
                         <img src={currencyConventer} alt="" />
                     </a>
                     <div className="project-content" style={{ marginLeft: '0', textAlign: 'left' }}>
                         <div>
                             <h5>Featured Project</h5>
-                            <a href='https://github.com/shokh001/Currency-Converter'>Currency Converter</a>
+                            <a target='_blank' rel="noreferrer" href='https://shokh-currency-conventer.netlify.app/'>Currency Converter</a>
 
                             <div className="project-card">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda beatae laboriosam, necessitatibus tempora eveniet officiis maxime, asperiores hic ab eligendi reprehenderit. Iure ducimus dolores vero perspiciatis natus, esse sunt.
@@ -27,8 +27,8 @@ const WorkTwo = () => {
                             </ul>
 
                             <div className="project-link">
-                                <a href="https://github.com/shokh001/Currency-Converter"><i className="fab fa-github"></i></a>
-                                <a href="/#"><i className="fas fa-external-link-alt"></i></a>
+                                <a target='_blank' rel="noreferrer" href="https://github.com/shokh001/Currency-Converter"><i className="fab fa-github"></i></a>
+                                <a target='_blank' rel="noreferrer" href="https://shokh-currency-conventer.netlify.app/"><i className="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
