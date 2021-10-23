@@ -29,6 +29,7 @@ const About = () => {
                             <div className="technology">React js</div>
                             <div className="technology">Styled Components</div>
                             <div className="technology">Redux</div>
+                            <div className="technology">Next Js</div>
                         </div>
                     </div>
                 </div>
