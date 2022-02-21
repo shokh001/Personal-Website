@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Resume from './Resume.pdf'
+import Resume from './CV.pdf'
 import './navbar.scss'
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
         var y = window.scrollY;
         window.onscroll = function () { window.scrollTo(x, y); };
     }
-    
+
     const enableScrolling = () => {
         setNav(false);
         let lastScrollTop = 0;
@@ -26,7 +26,7 @@ const Navbar = () => {
             }
             if (st <= lastScrollTop) {
                 setAddClass('navbar showNavbar')
-            } 
+            }
             if (st < 100) {
                 setAddClass('navbar')
             }
@@ -39,8 +39,8 @@ const Navbar = () => {
         setActive(num)
         enableScrolling()
     }
-    
-    useEffect(() => {    
+
+    useEffect(() => {
         enableScrolling()
     }, []);
 
@@ -61,10 +61,10 @@ const Navbar = () => {
                         <div className="line_2"></div>
                     </div>
                     <ul>
-                        <li><a href="#about" onClick={()=> linkGo(1)} style={{ border: active === 1 && '2px dashed #64ffda' }}> <span>01.</span> About</a></li>
-                        <li><a href="#experience" onClick={()=> linkGo(2)} style={{ border: active === 2 && '2px dashed #64ffda' }}> <span>02.</span> Experience</a></li>
-                        <li><a href="#work" onClick={()=> linkGo(3)} style={{ border: active === 3 && '2px dashed #64ffda' }}> <span>03.</span> Work</a></li>
-                        <li><a href="#contact" onClick={()=> linkGo(4)} style={{ border: active === 4 && '2px dashed #64ffda' }}> <span>04.</span> Contact</a></li>
+                        <li><a href="#about" onClick={() => linkGo(1)} style={{ border: active === 1 && '2px dashed #64ffda' }}> <span>01.</span> About</a></li>
+                        <li><a href="#experience" onClick={() => linkGo(2)} style={{ border: active === 2 && '2px dashed #64ffda' }}> <span>02.</span> Experience</a></li>
+                        <li><a href="#work" onClick={() => linkGo(3)} style={{ border: active === 3 && '2px dashed #64ffda' }}> <span>03.</span> Work</a></li>
+                        <li><a href="#contact" onClick={() => linkGo(4)} style={{ border: active === 4 && '2px dashed #64ffda' }}> <span>04.</span> Contact</a></li>
                     </ul>
 
                     <a className='btn' target='_blank' rel="noreferrer" href={Resume}>Resume</a>
