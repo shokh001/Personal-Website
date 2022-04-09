@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Resume from './CV.pdf'
+import Resume from './Resume.pdf'
 import './navbar.scss'
 
 const Navbar = () => {
